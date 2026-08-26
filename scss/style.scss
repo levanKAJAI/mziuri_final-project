@@ -1,8 +1,16 @@
-// ! მთავარი scss ფაილი - აქედან იკომპილირება css/main.css
-// შემდეგ ეტაპზე დაემატება partial ფაილები:
-// _variables, _mixins, _global, _header, _footer ...
+// ! მთავარი scss ფაილი - მხოლოდ partial ფაილებს აერთებს.
+// კომპილირდება css/style.css-ში
 
-body {
-    margin: 0;
-    font-family: "Lato", sans-serif;
-}
+@import './variables';
+@import './mixins';
+@import './global';
+
+// შემდეგ ეტაპებზე დაემატება:
+// @import './header';
+// @import './footer';
+// @import './home';
+// @import './about';
+// @import './services';
+// @import './news';
+// @import './contact';
+// @import './responsive';

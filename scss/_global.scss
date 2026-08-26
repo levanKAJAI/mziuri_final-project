@@ -1,0 +1,53 @@
+// ! საერთო სტილები მთელი საიტისთვის
+
+// ფონტი google fonts-იდან
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $main-font;
+    color: $dark;
+}
+
+img {
+    max-width: 100%;
+}
+
+// სექციის სტანდარტული დაშორება
+.section-space {
+    padding-top: $section-space;
+    padding-bottom: $section-space;
+}
+
+// სექციის სათაური - შაბლონივით მსხვილი და uppercase
+.section-title {
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    // წითელი აქცენტის ხაზი სათაურის ქვეშ
+    &::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: $red;
+        margin-top: 14px;
+    }
+
+    // ცენტრირებული ვარიანტისთვის ხაზიც შუაში დგება
+    &--center {
+        text-align: center;
+
+        &::after {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

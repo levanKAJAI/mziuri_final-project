@@ -1,6 +1,44 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Lato", sans-serif;
+  color: rgb(44, 45, 46);
+}
+
+img {
+  max-width: 100%;
+}
+
+.section-space {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: rgb(234, 32, 46);
+  margin-top: 14px;
+}
+.section-title--center {
+  text-align: center;
+}
+.section-title--center::after {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
