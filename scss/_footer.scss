@@ -1,0 +1,108 @@
+// ! საიტის ფუტერი - მუქი, სამ სვეტად
+
+.site-footer {
+    background-color: $dark;
+    color: $white;
+
+    &__top {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    // ლოგო ისეთივეა, როგორც navbar-ში
+    &__logo {
+        font-weight: 900;
+        font-size: 22px;
+        letter-spacing: 1px;
+
+        span {
+            color: $red;
+        }
+    }
+
+    &__text {
+        color: rgb(170, 170, 172);
+        font-size: 15px;
+        line-height: 1.7;
+        max-width: 320px;
+    }
+
+    // მრგვალი სოციალური აიქონები
+    &__social-link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(62, 64, 66);
+        color: $white;
+        font-size: 17px;
+        margin-right: 10px;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $red;
+            color: $white;
+        }
+    }
+
+    // სვეტის სათაური წითელი ხაზით
+    &__title {
+        font-size: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 34px;
+            height: 3px;
+            background-color: $red;
+            margin-top: 10px;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__link {
+        display: inline-block;
+        color: rgb(170, 170, 172);
+        text-decoration: none;
+        padding: 6px 0;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    &__info {
+        color: rgb(170, 170, 172);
+        padding: 6px 0;
+
+        i {
+            color: $red;
+            margin-right: 10px;
+        }
+    }
+
+    // ქვედა ზოლი copyright-ით
+    &__bottom {
+        border-top: 1px solid rgb(70, 72, 74);
+        padding: 18px 0;
+        text-align: center;
+
+        p {
+            margin: 0;
+            color: rgb(150, 152, 154);
+            font-size: 14px;
+        }
+    }
+}
