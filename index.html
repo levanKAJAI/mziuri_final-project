@@ -38,7 +38,58 @@
     </header>
     <!-- ! header-end -->
 
-    <h1>AutoFixGeorgia</h1>
+    <!-- ! hero-start (Bootstrap Carousel სლაიდერი) -->
+    <section class="hero">
+        <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- სლაიდების ინდიკატორები -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/hero-banner-1.jpg" class="d-block w-100 hero__img" alt="car repair garage with a red classic car">
+                    <div class="carousel-caption hero__caption">
+                        <h1 class="hero__title">Full-Service <span>Repair</span> Facility</h1>
+                        <p class="hero__text">From quick diagnostics to major repairs — one team, one place, honest prices.</p>
+                        <a href="services.html" class="hero__btn">Our Services</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./images/hero-banner-2.jpg" class="d-block w-100 hero__img" alt="mechanic changing a car wheel">
+                    <div class="carousel-caption hero__caption">
+                        <h2 class="hero__title">Quality Car <span>Maintenance</span></h2>
+                        <p class="hero__text">Oil, brakes, tires and regular check-ups for all makes and models.</p>
+                        <a href="contact.html" class="hero__btn">Book a Visit</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./images/hero-banner-3.jpg" class="d-block w-100 hero__img" alt="experienced mechanic in the workshop">
+                    <div class="carousel-caption hero__caption">
+                        <h2 class="hero__title">Expert Team of <span>Technicians</span></h2>
+                        <p class="hero__text">Certified mechanics with 15+ years of hands-on experience.</p>
+                        <a href="about.html" class="hero__btn">Meet the Team</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- წინ/უკან ღილაკები -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- ! hero-end -->
 
     <!-- ! footer-start (საერთო ფუტერი) -->
     <footer class="site-footer">

@@ -1,0 +1,49 @@
+// ! მთავარი გვერდის სტილები
+
+// hero სლაიდერი
+.hero {
+
+    &__img {
+        height: 82vh;
+        object-fit: cover;
+        // ცოტა ვაბნელებთ, რომ თეთრი ტექსტი კარგად იკითხებოდეს
+        filter: brightness(0.45);
+    }
+
+    // Bootstrap-ის caption-ს ვცვლით: მარცხნივ და ვერტიკალურად შუაში
+    &__caption {
+        text-align: left;
+        left: 8%;
+        right: 8%;
+        bottom: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 620px;
+        // წინ/უკან გადამრთველი ზოლები caption-ს ზემოდან ედო და
+        // ღილაკის მარცხენა ნახევარზე კლიკი სლაიდს ცვლიდა
+        z-index: 2;
+    }
+
+    &__title {
+        font-size: 52px;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1.15;
+
+        // ერთი სიტყვა წითლად გამოიყოფა
+        span {
+            color: $red;
+        }
+    }
+
+    &__text {
+        font-size: 17px;
+        color: rgb(225, 225, 225);
+        margin: 18px 0 28px;
+    }
+
+    // ღილაკი საერთო მიქსინით - ერთიანი სტილი მთელ საიტზე
+    &__btn {
+        @include button($red, $white, $white, $dark);
+    }
+}
