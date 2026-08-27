@@ -102,3 +102,60 @@
         }
     }
 }
+
+
+// უპირატესობების სექცია - მუქი ზოლი 4 ბარათით
+.advantages {
+    background-color: $dark;
+
+    // მუქ ფონზე სათაური თეთრი გვჭირდება
+    .section-title {
+        color: $white;
+        margin-bottom: 50px;
+    }
+
+    &__card {
+        background-color: rgb(58, 60, 62);
+        border-radius: $radius;
+        padding: 34px 24px;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+        // hover-ზე ბარათი ოდნავ მაღლა იწევს
+        &:hover {
+            transform: translateY(-8px);
+            background-color: rgb(66, 68, 70);
+        }
+    }
+
+    // წითელი კვადრატი აიქონით
+    &__icon {
+        width: 64px;
+        height: 64px;
+        margin: 0 auto 18px;
+        background-color: $red;
+        border-radius: $radius;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        color: $white;
+    }
+
+    &__name {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $white;
+        margin-bottom: 12px;
+    }
+
+    &__text {
+        font-size: 15px;
+        color: rgb(176, 178, 180);
+        line-height: 1.7;
+        margin: 0;
+    }
+}
