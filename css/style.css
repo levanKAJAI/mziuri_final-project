@@ -205,4 +205,44 @@ img {
   color: rgb(44, 45, 46);
 }
 
+.promo__item {
+  border-left: 4px solid rgb(234, 32, 46);
+  padding: 10px 20px 10px 24px;
+  height: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+.promo__item:hover {
+  background-color: rgb(246, 246, 246);
+}
+.promo__title {
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+.promo__title span {
+  display: block;
+  color: rgb(234, 32, 46);
+}
+.promo__text {
+  color: rgb(118, 120, 122);
+  line-height: 1.7;
+  margin: 16px 0 18px;
+}
+.promo__link {
+  color: rgb(234, 32, 46);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.promo__link i {
+  margin-left: 6px;
+}
+.promo__link:hover {
+  color: rgb(44, 45, 46);
+}
+
 /*# sourceMappingURL=style.css.map */

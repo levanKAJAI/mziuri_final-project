@@ -47,3 +47,58 @@
         @include button($red, $white, $white, $dark);
     }
 }
+
+
+// სამი სარეკლამო ბლოკი hero-ს ქვემოთ
+.promo {
+
+    &__item {
+        // წითელი აქცენტის ზოლი მარცხნივ
+        border-left: 4px solid $red;
+        padding: 10px 20px 10px 24px;
+        height: 100%;
+        transition: background-color 0.3s ease-in-out;
+
+        // hover-ზე ბლოკი ღია ფონს იღებს
+        &:hover {
+            background-color: $light-bg;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1.25;
+
+        // მეორე სიტყვა ახალი ხაზიდან, წითლად
+        span {
+            display: block;
+            color: $red;
+        }
+    }
+
+    &__text {
+        color: $gray;
+        line-height: 1.7;
+        margin: 16px 0 18px;
+    }
+
+    &__link {
+        color: $red;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+
+        i {
+            margin-left: 6px;
+        }
+
+        &:hover {
+            color: $dark;
+        }
+    }
+}
