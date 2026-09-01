@@ -1,0 +1,43 @@
+// ! services გვერდის სტილები
+
+.services-grid {
+
+    .section-title {
+        margin-bottom: 50px;
+    }
+}
+
+// ხდკ - Bootstrap Accordion ჩვენი ფერებით
+.services-faq {
+    background-color: $light-bg;
+
+    .section-title {
+        margin-bottom: 50px;
+    }
+
+    &__accordion {
+        max-width: 820px;
+        margin: 0 auto;
+    }
+
+    .accordion-button {
+        font-weight: 700;
+        color: $dark;
+
+        // გახსნილი კითხვის ღილაკი წითელია
+        &:not(.collapsed) {
+            background-color: $red;
+            color: $white;
+        }
+
+        // ლურჯი focus-ჩრდილი არ გვინდა
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .accordion-body {
+        color: $gray;
+        line-height: 1.7;
+    }
+}

@@ -551,4 +551,34 @@ img {
   color: rgb(255, 255, 255);
 }
 
+.services-grid .section-title {
+  margin-bottom: 50px;
+}
+
+.services-faq {
+  background-color: rgb(246, 246, 246);
+}
+.services-faq .section-title {
+  margin-bottom: 50px;
+}
+.services-faq__accordion {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.services-faq .accordion-button {
+  font-weight: 700;
+  color: rgb(44, 45, 46);
+}
+.services-faq .accordion-button:not(.collapsed) {
+  background-color: rgb(234, 32, 46);
+  color: rgb(255, 255, 255);
+}
+.services-faq .accordion-button:focus {
+  box-shadow: none;
+}
+.services-faq .accordion-body {
+  color: rgb(118, 120, 122);
+  line-height: 1.7;
+}
+
 /*# sourceMappingURL=style.css.map */
