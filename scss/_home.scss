@@ -239,3 +239,82 @@
         }
     }
 }
+
+
+// მომხმარებელთა შეფასებები
+.testimonials {
+
+    .section-title {
+        margin-bottom: 50px;
+    }
+}
+
+.testimonial-card {
+    // ბრჭყალის აიქონი absolute-ით დგება
+    position: relative;
+    background-color: $white;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: $radius;
+    padding: 30px 26px;
+    height: 100%;
+    transition: box-shadow 0.3s ease-in-out;
+
+    // hover-ზე მსუბუქი ჩრდილი
+    &:hover {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    // დიდი ღია ბრჭყალი კუთხეში
+    &__quote {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 44px;
+        color: rgb(235, 235, 235);
+    }
+
+    &__stars {
+        color: $red;
+        font-size: 15px;
+        letter-spacing: 3px;
+        margin-bottom: 14px;
+    }
+
+    &__text {
+        color: $gray;
+        line-height: 1.7;
+        font-style: italic;
+    }
+
+    &__person {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 18px;
+    }
+
+    // ინიციალების მუქი წრე ფოტოს ნაცვლად
+    &__avatar {
+        width: 46px;
+        height: 46px;
+        background-color: $dark;
+        color: $white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    &__name {
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__role {
+        color: $gray;
+        font-size: 13px;
+        margin: 0;
+    }
+}
