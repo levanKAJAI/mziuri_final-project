@@ -1,0 +1,99 @@
+// ! about გვერდის სტილები
+
+// ისტორიის სექცია
+.about-story {
+
+    &__img {
+        width: 100%;
+        border-radius: $radius;
+    }
+
+    .section-title {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        color: $gray;
+        line-height: 1.8;
+    }
+
+    &__stats {
+        margin-top: 30px;
+    }
+
+    &__number {
+        color: $red;
+        font-size: 30px;
+        font-weight: 900;
+        margin: 0;
+    }
+
+    &__label {
+        color: $gray;
+        font-size: 13px;
+        margin: 4px 0 0;
+    }
+}
+
+// "როგორ ვმუშაობთ" - სამი ნაბიჯი
+.about-steps {
+    background-color: $light-bg;
+
+    .section-title {
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        text-align: center;
+        padding: 0 14px;
+    }
+
+    // წითელი წრე ნომრით
+    &__circle {
+        width: 58px;
+        height: 58px;
+        margin: 0 auto 18px;
+        background-color: $red;
+        color: $white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    &__name {
+        font-size: 19px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: $gray;
+        line-height: 1.7;
+    }
+}
+
+// წითელი მოწვევის ზოლი გვერდის ბოლოს
+.about-cta {
+    background-color: $red;
+    padding: 60px 0;
+    color: $white;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin: 12px 0 26px;
+    }
+
+    // თეთრი ღილაკი წითელ ფონზე - იგივე მიქსინით
+    &__btn {
+        @include button($white, $dark, $dark, $white);
+    }
+}

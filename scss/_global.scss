@@ -51,3 +51,32 @@ img {
         }
     }
 }
+
+// ! შიდა გვერდების ზედა ბანერი - სათაური მუქ ფონზე
+.page-banner {
+    background-color: $dark;
+    padding: 64px 0;
+    color: $white;
+
+    &__title {
+        font-size: 42px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: 0;
+
+        // წითელი ხაზი სათაურის ქვეშ
+        &::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: $red;
+            margin-top: 14px;
+        }
+    }
+
+    &__text {
+        color: rgb(180, 182, 184);
+        margin: 14px 0 0;
+    }
+}
