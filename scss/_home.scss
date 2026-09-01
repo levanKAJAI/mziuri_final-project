@@ -159,3 +159,83 @@
         margin: 0;
     }
 }
+
+
+// სერვისების preview - Bootstrap Card ჩვენი დიზაინით
+.services-preview {
+    background-color: $light-bg;
+
+    .section-title {
+        margin-bottom: 50px;
+    }
+
+    &__more {
+        margin-top: 44px;
+    }
+
+    // "ყველა სერვისის" ღილაკი იმავე მიქსინით
+    &__btn {
+        @include button($red, $white, $dark, $white);
+    }
+}
+
+.service-card {
+    // Bootstrap-ის card-ის საკუთარი ჩარჩო არ გვინდა
+    border: none;
+    border-radius: $radius;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    // hover-ზე ბარათი იწევა და ჩრდილი უჩნდება
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+    }
+
+    &__img {
+        height: 210px;
+        object-fit: cover;
+    }
+
+    &__body {
+        padding: 24px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: $gray;
+        line-height: 1.7;
+        margin: 12px 0;
+    }
+
+    &__price {
+        color: $red;
+        font-size: 18px;
+        font-weight: 900;
+        margin-bottom: 14px;
+    }
+
+    &__link {
+        color: $dark;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+
+        i {
+            margin-left: 6px;
+        }
+
+        &:hover {
+            color: $red;
+        }
+    }
+}
