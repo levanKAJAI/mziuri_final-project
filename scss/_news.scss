@@ -1,0 +1,141 @@
+// ! news გვერდის სტილები
+
+// საერთო "Read More" ბმული სიახლეებისთვის
+.news-link {
+    color: $red;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    i {
+        margin-left: 6px;
+    }
+
+    &:hover {
+        color: $dark;
+    }
+}
+
+// მთავარი სიახლე - ჰორიზონტალური ბარათი
+.news-featured {
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    &__card {
+        background-color: $white;
+        border: 1px solid rgb(232, 232, 232);
+        border-radius: $radius;
+        overflow: hidden;
+    }
+
+    // თარიღის ბეჯისთვის გვჭირდება position: relative
+    &__img-box {
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        min-height: 300px;
+        object-fit: cover;
+        display: block;
+    }
+
+    // წითელი თარიღის ბეჯი სურათზე
+    &__badge {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        background-color: $red;
+        color: $white;
+        font-size: 13px;
+        font-weight: 700;
+        padding: 6px 14px;
+        border-radius: $radius;
+    }
+
+    &__body {
+        padding: 36px;
+    }
+
+    &__title {
+        font-size: 26px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        color: $gray;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+}
+
+// სიახლეების პატარა ბარათები
+.news-grid {
+    background-color: $light-bg;
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+}
+
+.news-card {
+    background-color: $white;
+    border-radius: $radius;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    // hover-ზე ბარათი იწევა
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    &__img-box {
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    &__badge {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background-color: $red;
+        color: $white;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: $radius;
+    }
+
+    &__body {
+        padding: 18px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 14px;
+        color: $gray;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+}
