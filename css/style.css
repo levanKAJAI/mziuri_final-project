@@ -695,4 +695,160 @@ img {
   margin-bottom: 12px;
 }
 
+.contact-info .section-title {
+  margin-bottom: 50px;
+}
+.contact-info__card {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 4px;
+  text-align: center;
+  padding: 30px 20px;
+  height: 100%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.contact-info__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+.contact-info__icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 16px;
+  background-color: rgb(234, 32, 46);
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.contact-info__name {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.contact-info__text {
+  color: rgb(118, 120, 122);
+  font-size: 15px;
+  margin: 0;
+}
+.contact-info__text a {
+  color: rgb(118, 120, 122);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.contact-info__text a:hover {
+  color: rgb(234, 32, 46);
+}
+
+.contact-form-section {
+  background-color: rgb(246, 246, 246);
+}
+.contact-form-section .section-title {
+  margin-bottom: 34px;
+}
+
+.contact-form__label {
+  font-weight: 700;
+  font-size: 14px;
+}
+.contact-form__input {
+  padding: 11px 14px;
+  border: 1px solid rgb(210, 210, 212);
+  border-radius: 4px;
+  font-size: 15px;
+}
+.contact-form__input:focus {
+  border-color: rgb(234, 32, 46);
+  box-shadow: none;
+}
+.contact-form__btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background-color: rgb(234, 32, 46);
+  color: rgb(255, 255, 255);
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  margin-top: 6px;
+}
+.contact-form__btn:hover {
+  background-color: rgb(44, 45, 46);
+  color: rgb(255, 255, 255);
+}
+
+.contact-side {
+  background-color: rgb(44, 45, 46);
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 34px 30px;
+  height: 100%;
+}
+.contact-side__title {
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+.contact-side__title::after {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 3px;
+  background-color: rgb(234, 32, 46);
+  margin-top: 12px;
+}
+.contact-side__step {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.contact-side__num {
+  min-width: 34px;
+  height: 34px;
+  background-color: rgb(234, 32, 46);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 15px;
+}
+.contact-side__text {
+  color: rgb(200, 202, 204);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+.contact-side__phone {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid rgb(70, 72, 74);
+}
+.contact-side__phone p {
+  color: rgb(170, 172, 174);
+  font-size: 14px;
+  margin: 0 0 6px;
+}
+.contact-side__phone a {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 900;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.contact-side__phone a:hover {
+  color: rgb(234, 32, 46);
+}
+
 /*# sourceMappingURL=style.css.map */

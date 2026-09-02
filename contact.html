@@ -38,7 +38,137 @@
     </header>
     <!-- ! header-end -->
 
-    <h1>Contact Us</h1>
+    <!-- ! page-banner-start (გვერდის სათაური) -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 class="page-banner__title">Contact Us</h1>
+            <p class="page-banner__text">We answer every message within 15 minutes</p>
+        </div>
+    </section>
+    <!-- ! page-banner-end -->
+
+
+    <!-- ! contact-info-start (საკონტაქტო ბარათები) -->
+    <section class="contact-info section-space">
+        <div class="container">
+            <h2 class="section-title section-title--center">Get In Touch</h2>
+
+            <div class="row gy-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-info__card">
+                        <div class="contact-info__icon"><i class="bi bi-geo-alt"></i></div>
+                        <h3 class="contact-info__name">Location</h3>
+                        <p class="contact-info__text">25 Kakheti Highway, Tbilisi</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-info__card">
+                        <div class="contact-info__icon"><i class="bi bi-telephone"></i></div>
+                        <h3 class="contact-info__name">Phone</h3>
+                        <p class="contact-info__text"><a href="tel:+995322112233">+995 32 2 11 22 33</a></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-info__card">
+                        <div class="contact-info__icon"><i class="bi bi-envelope"></i></div>
+                        <h3 class="contact-info__name">Email</h3>
+                        <p class="contact-info__text"><a href="mailto:info@autofixgeorgia.ge">info@autofixgeorgia.ge</a></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-info__card">
+                        <div class="contact-info__icon"><i class="bi bi-clock"></i></div>
+                        <h3 class="contact-info__name">Working Hours</h3>
+                        <p class="contact-info__text">Mon - Sat: 09:00 - 19:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ! contact-info-end -->
+
+
+    <!-- ! contact-form-start (ფორმა + გვერდითი პანელი) -->
+    <section class="contact-form-section section-space">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-7">
+                    <h2 class="section-title">Send Us a Message</h2>
+
+                    <!-- ფორმას გაგზავნა არ სჭირდება - backend არ გვაქვს -->
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="fullName" class="form-label contact-form__label">Your Name</label>
+                                <input type="text" class="form-control contact-form__input" id="fullName" placeholder="e.g. Giorgi Beridze">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label contact-form__label">Email</label>
+                                <input type="email" class="form-control contact-form__input" id="email" placeholder="you@example.com">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label contact-form__label">Phone Number</label>
+                                <input type="tel" class="form-control contact-form__input" id="phone" placeholder="+995 5XX XX XX XX">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="service" class="form-label contact-form__label">Service You Need</label>
+                                <select class="form-select contact-form__input" id="service">
+                                    <option selected>Choose a service...</option>
+                                    <option>Computer Diagnostics</option>
+                                    <option>Brake Repair</option>
+                                    <option>Engine Repair</option>
+                                    <option>Oil Change</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label for="message" class="form-label contact-form__label">Message</label>
+                                <textarea class="form-control contact-form__input" id="message" rows="5" placeholder="Tell us what happened to your car..."></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="contact-form__btn">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="contact-side">
+                        <h3 class="contact-side__title">What Happens Next?</h3>
+
+                        <div class="contact-side__step">
+                            <div class="contact-side__num">1</div>
+                            <p class="contact-side__text">We call you back within 15 minutes during working hours.</p>
+                        </div>
+
+                        <div class="contact-side__step">
+                            <div class="contact-side__num">2</div>
+                            <p class="contact-side__text">Together we agree on the time and the approximate price.</p>
+                        </div>
+
+                        <div class="contact-side__step">
+                            <div class="contact-side__num">3</div>
+                            <p class="contact-side__text">You drive in — we take care of everything else.</p>
+                        </div>
+
+                        <div class="contact-side__phone">
+                            <p>In a hurry? Call us now:</p>
+                            <a href="tel:+995322112233">+995 32 2 11 22 33</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ! contact-form-end -->
 
     <!-- ! footer-start (საერთო ფუტერი) -->
     <footer class="site-footer">
