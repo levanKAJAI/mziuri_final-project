@@ -12,5 +12,5 @@
 @import './news';
 @import './contact';
 
-// შემდეგ ეტაპებზე დაემატება:
-// @import './responsive';
+// responsive ბოლოში უნდა იყოს, რომ ყველა სტილს გადაეწეროს
+@import './responsive';

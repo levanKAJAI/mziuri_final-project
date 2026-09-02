@@ -851,4 +851,70 @@ img {
   color: rgb(234, 32, 46);
 }
 
+@media screen and (max-width: 992px) {
+  .hero__title {
+    font-size: 40px;
+  }
+  .hero__img {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-space {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  .section-title {
+    font-size: 28px;
+  }
+  .page-banner {
+    padding: 44px 0;
+  }
+  .page-banner__title {
+    font-size: 30px;
+  }
+  .hero__title {
+    font-size: 32px;
+  }
+  .hero__text {
+    font-size: 15px;
+  }
+  .hero__img {
+    height: 62vh;
+  }
+  .news-featured__img {
+    min-height: 220px;
+  }
+  .about-cta__title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+  }
+  .hero__caption {
+    left: 6%;
+    right: 6%;
+  }
+  .promo__title {
+    font-size: 21px;
+  }
+  .about-story__number {
+    font-size: 24px;
+  }
+  .news-featured__title {
+    font-size: 21px;
+  }
+  .news-featured__body {
+    padding: 24px;
+  }
+  .contact-form__btn {
+    width: 100%;
+  }
+  .contact-side__phone a {
+    font-size: 19px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
